@@ -1,0 +1,30 @@
+# compiled output
+test-1/dist
+test-1/node_modules
+
+# Logs
+test-1/logs
+test-1/*.log
+test-1/npm-debug.log*
+test-1/pnpm-debug.log*
+test-1/yarn-debug.log*
+test-1/yarn-error.log*
+test-1/lerna-debug.log*
+
+# OS
+test-1/.DS_Store
+
+# Tests
+test-1/coverage
+test-1/.nyc_output
+
+# IDEs and editors
+test-1/.idea
+test-1/.project
+test-1/.classpath
+test-1/.c9/
+test-1/*.launch
+test-1/.settings/
+test-1/*.sublime-workspace
+
+test-2/node_modules

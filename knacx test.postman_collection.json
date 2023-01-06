@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "a8d08e6f-e00f-4c25-a5ee-94cf385750cf",
+		"name": "knacx test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23839122"
+	},
+	"item": [
+		{
+			"name": "user register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"นาย\",\n    \"citizenId\": \"1111111111111\",\n    \"firstName\": \"solah\",\n    \"lastName\": \"mad-adam\",\n    \"gender\": \"ชาย\",\n    \"dateOfBirth\": \"1999-08-23\",\n    \"weight\": 65,\n    \"height\": 170,\n    \"phone\": \"0980302113\",\n    \"address\":{\n        \"no\": \"1/2\",\n        \"moo\": \"4\",\n        \"road\": \"-\",\n        \"tambol\": \"ปลักหนู\",\n        \"amphure\": \"นาทวี\",\n        \"province\": \"สงขลา\",\n        \"zipCode\": \"90160\"\n\n    },\n    \"historyTaking\":{\n        \"covidCheckDate\": \"2022-12-12\",\n        \"covidResult\": \"negative\",\n        \"isVaccinated\": true,\n        \"isRegularDisease\": false,\n        \"regularDiseaseList\": [\"ความดัน\",\"ภูมิแพ้\"]\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"นาย\",\n    \"citizenId\": \"1111111111111\",\n    \"firstName\": \"solahถถถ\",\n    \"lastName\": \"mad-adam\",\n    \"gender\": \"ชาย\",\n    \"dateOfBirth\": \"1999-08-23\",\n    \"weight\": 65,\n    \"height\": 170,\n    \"phone\": \"0980302113\",\n    \"address\":{\n        \"id\": 16,\n        \"no\": \"1/222\",\n        \"moo\": \"4\",\n        \"road\": \"-\",\n        \"tambol\": \"ปลักหนู\",\n        \"amphure\": \"นาทวี\",\n        \"province\": \"สงขลา\",\n        \"zipCode\": \"90160\"\n\n    },\n    \"historyTaking\":{\n         \"id\": 9,\n        \"covidCheckDate\": \"2022-12-12\",\n        \"covidResult\": \"negative\",\n        \"isVaccinated\": true,\n        \"isRegularDisease\": false,\n        \"regularDiseaseList\": null\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/18",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"18"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user get by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/17",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"17"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user get all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user delete by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
